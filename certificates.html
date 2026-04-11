@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates</title>
+
+<style>
+.header{                 
+    display:flex;        
+    justify-content:space-between;  
+    align-items:center;  
+    padding-top: 10px;
+    color: #56c6ef;
+}
+.outer{
+    background-color:#292931;
+    height: 600px;
+    border: 2px;
+    border-radius:50px;
+    margin:90px;
+    padding-left:100px;
+    padding-top:30px; 
+}
+
+.navbar{
+    display:flex;
+    margin-right: 180px;
+}
+.navbar a:hover{
+    font-size:17px;
+    color: #56c6ef;
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: aliceblue;
+}
+.heading{
+    margin-left: 420px;
+    margin-bottom:50px;
+}
+body{
+    background-color:#56c6ef;
+    color: aliceblue;
+}
+
+.container{
+    background-color:#292931;
+    margin:50px;
+    padding-left:60px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap:60px;
+}
+
+/* SAME BOX STYLE */
+.certificate{
+    height: 230px;
+    width: 150px;
+    background-color:#56c6ef;
+    padding-left:10px;
+    color: #292931;
+    font-size: 17px;
+    border-radius: 10px;
+    transition:0.3s;
+}
+
+.certificate:hover{
+    background:rgb(25, 138, 134);
+    color:#56c6ef;
+    transform:scale(1.1);
+    box-shadow:0 0 5px #56c6ef;
+}
+
+h1{
+    color: #56c6ef;
+    font-weight:bold;
+}
+
+/* ✅ Button added */
+.btn{
+    margin-top:10px;
+    padding:6px 10px;
+    background:#3eabd2;;
+    color:rgb(51, 50, 50);
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#56c6ef;
+    color:#292931;
+}
+
+/* ✅ Popup added */
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    justify-content:center;
+    align-items:center;
+}
+
+.popup img{
+    max-width:80%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+.close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+<div class="outer">
+
+    <div class="header"> 
+        <h2 class="logo" style="color: azure;">Portfolio</h2>
+
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>My Certificates</h1>
+    </div>
+
+   <div class="container">
+
+    <div class="certificate">
+        <h2 style="color: #035776;">Responsive Web Design</h2>
+        <p>By Infosys Springboard</p>
+        <button onclick="openPopup('wd_certificate.jpeg')" class="btn"><b>View</b></button>
+    </div>
+
+    <div class="certificate">
+        <h2 style="color: #035776;">Digital Electronics</h2>
+        <p>By Infosys Springboard</p>
+        <button onclick="openPopup('DLCO_certificate.jpeg')" class="btn"><b>View</b></button>
+    </div>
+
+    <div class="certificate">
+        <h2 style="color: #035776;">Data Science for Beginners</h2>
+        <p>By BOARD</p>
+        <button onclick="openPopup('Datascience_certificate.jpeg')" class="btn"><b>View</b></button>
+    </div>
+
+    <div class="certificate">
+        <h2 style="color: #035776;">Generative AI Model</h2>
+        <p>By NXT WAVE</p>
+        <button onclick="openPopup('generative_AI_Certificate.jpeg')" class="btn"><b>View</b></button>
+    </div>
+
+</div>
+
+</div>
+
+<!-- ✅ Popup HTML -->
+<div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <img id="popup-img" src="">
+</div>
+
+<!-- ✅ JavaScript -->
+<script>
+function openPopup(image){
+    document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup-img").src = image;
+}
+
+function closePopup(){
+    document.getElementById("popup").style.display = "none";
+}
+</script>
+
+</body>
+</html>

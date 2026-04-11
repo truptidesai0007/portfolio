@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.header{                 
+    display:flex;        
+    justify-content:space-between;  
+    align-items:center;  
+    padding-top: 30px;
+}
+
+.navbar{
+    display:flex;
+    margin-right: 180px;
+}
+.navbar a:hover{
+font-size:17px;
+color: #56c6ef;
+
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: aliceblue;
+}
+
+body{
+    background-color:#56c6ef;
+    color: aliceblue;
+}
+
+.container{
+    background-color:#292931;
+    height: 600px;
+    border: 2px;
+    border-radius:50px;
+    margin:90px;
+    padding-left:100px;
+    
+}
+.image{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 0 1px #0ef;
+   margin-top: 60px;
+}
+.hexagon{
+    width:250px;
+    height: 300px;
+    background: #0ef;
+    clip-path: polygon(25% 5%, 75% 5% ,100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1px #0ef;
+    margin-top: -390px;
+    margin-left: 360px;
+    box-shadow: 0 0 20px #0ef;
+    transition: 0.5s;
+}
+.hexagon img{
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+    object-position:center 0%;
+    clip-path: polygon(25% 5%, 75% 5% ,100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+h4{
+    margin-top: 100px;
+}
+
+.logo{
+    font-size:22px;
+}
+button{
+    background-color: #14779b;
+    border-radius: 20px;
+    height: 40px;
+    width: 180px;
+    margin-top: 20px;
+    animation-name: button;
+}
+.btn{
+background:#3eabd2;
+color:rgb(51, 50, 50);
+padding:12px 25px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+font-size:14px;
+transition:0.4s;
+}
+.hexagon:hover{
+
+    box-shadow: #033648;
+}
+/* animation on hover */
+.btn:hover{
+background:rgb(25, 138, 134);
+color:#56c6ef;
+transform:scale(1.1);
+box-shadow:0 0 5px #56c6ef;
+}
+p{
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer{
+    /*height:20px;
+    width:400px;
+    text-align:center;
+    padding:18px;*/
+    background:#292931;
+    margin-top: 25px;
+}
+
+.footer a{
+    color:rgb(20, 141, 193);
+    font-size:20px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.footer a:hover{
+    color:#56c6ef;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header"> 
+
+        <h2 class="logo">Portfolio</h2>
+
+        <div class="navbar">
+            <a href="home.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="certificates.html">Certificates</a>
+            <a href="Projects.html">Projects</a>
+            <a href="Contact.html">Contact</a>
+            
+        </div>
+    </div>
+    <h4>Hello , It's Me</h4>
+    <h1>Trupti Desai</h1>
+    <h3>And I'm a<b style="color:#56c6ef;"> Frontend Developer</b></h3>
+    <p>Passionate about building modern and user-friendly web interfaces. </p>
+    <p>Always Eager to learn new technologies and improve my skills.</p>
+    <a href="Deep Purple Professional College Student CV Resume (1).pdf"><button class="btn"><b>Download Resume</b></button></a>
+    <div class="footer">
+
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+
+         <a href="https://www.linkedin.com/in/trupti-desai-2a9b2b3a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+         </a>
+
+        <a href="https://twitter.com" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+
+        <a href="mailto:truptidesai0007@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+
+    <div class="image">
+        <div class="hexagon">
+            <img src="WhatsApp Image 2025-06-17 at 9.34.34 PM.jpeg" alt="my_image">
+        </div>
+    </div> 
+   
+
+</div>
+</body>
+</html>
